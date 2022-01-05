@@ -1,23 +1,20 @@
 import { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 
-const Data = () => {
+const UseDataFetch = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos")
+    fetch("https://rickandmortyapi.com/api/character/49")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
 
   return (
     <>
-      {data &&
-        data.map((item) => {
-          return <p key={item.id}>{item.title}</p>;
-        })}
+      <p>{JSON.stringify(data)}</p>
     </>
   );
 };
 
-export { Data };
+export { UseDataFetch };
