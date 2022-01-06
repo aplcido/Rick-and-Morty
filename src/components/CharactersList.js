@@ -8,9 +8,6 @@ import Card from "./Card";
 const CharactersList = ({ characters }) => {
   //let navigate = useNavigate();
 
-  function handleClick(e) {
-    console.log("Hello World");
-  }
   return (
     <div className="container">
       <div className="row">
