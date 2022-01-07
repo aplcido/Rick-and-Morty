@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import CardCharacter from "./CardCharacter";
 
 //const Detail = (url) => {
 //  console.log("Hello World");
@@ -13,7 +13,7 @@ const CharactersList = ({ characters }) => {
       <div className="row">
         {characters.map((item, index) => (
           <div key={index} className="col-lg-3 col-md-6 col-sm-12 mb-4">
-            <Card character={item} />
+            <CardCharacter character={item} />
           </div>
         ))}
       </div>
