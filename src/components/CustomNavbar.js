@@ -6,16 +6,20 @@ import "../App.css";
 
 const CustomNavbar = () => (
   <>
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="primary" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Rick and Morty</Navbar.Brand>
+        <Navbar.Brand href="/">Rick and Morty</Navbar.Brand>
         <Nav className="me-auto">
-          <Link to="/" className="navBarLink">
-            Home
-          </Link>
-          <Link to="/about" className="navBarLink">
-            About
-          </Link>
+          <Nav.Item>
+            <Nav.Link as={Link} to="/">
+              Home
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={Link} to="/about">
+              About
+            </Nav.Link>
+          </Nav.Item>
         </Nav>
       </Container>
     </Navbar>
