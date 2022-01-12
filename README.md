@@ -9,3 +9,5 @@ Use the following command on the project's directory
 ```bash
 npm start
 ```
+
+[App's deployment location](https://hardcore-bhaskara-b3fa94.netlify.app)
